@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<ul>
+    {% for i in lectu %}
+    <video width="600" height="500" controls>
+        <source src="https://drive.google.com/uc?export=download&id={{i}}" type='video/mp4'>
+
+    </video>
+
+    {% endfor %}
+</ul>
+
+
+
+
+
+
+{% endblock content %}
+
+
+<!-- https://drive.google.com/file/d/15v7sZb-zSnVPFOSdT-1hcPzRnnKhPbH1/view?usp=sharing -->
