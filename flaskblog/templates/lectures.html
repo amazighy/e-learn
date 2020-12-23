@@ -1,23 +1,22 @@
 {% extends "layout.html" %}
 {% block content %}
 
+{{users[page-1]}}
+
 
 <ul>
-    {% for i in lectu %}
+
     <video width="600" height="500" controls>
-        <source src="https://drive.google.com/uc?export=download&id={{i}}" type='video/mp4'>
+        <source src="https://drive.google.com/uc?export=download&id={{users[page-1]}}" type='video/mp4'>
 
     </video>
 
-    {% endfor %}
+
 </ul>
-
-
-
-
-
-
+{{ pagination.links }}
 {% endblock content %}
+
+
 
 
 <!-- https://drive.google.com/file/d/15v7sZb-zSnVPFOSdT-1hcPzRnnKhPbH1/view?usp=sharing -->
